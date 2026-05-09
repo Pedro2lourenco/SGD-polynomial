@@ -166,22 +166,6 @@ Durante o treinamento o gráfico é atualizado em tempo real mostrando:
 
 ---
 
-# Como Executar
-
-Salve o código em um arquivo:
-
-```bash
-main.py
-```
-
-Execute:
-
-```bash
-python main.py
-```
-
----
-
 # Resultado Esperado
 
 Ao longo das épocas, a curva prevista deve convergir para a função original:
