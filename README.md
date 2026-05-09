@@ -160,7 +160,9 @@ Durante o treinamento o gráfico é atualizado em tempo real mostrando:
 * Pontos dos dados originais
 * Curva prevista pelo modelo
 
-A linha vermelha tracejada representa a aproximação atual do polinômio.
+<p align="center">
+  <img src="sgd_training.gif" width="500">
+</p>
 
 ---
 
