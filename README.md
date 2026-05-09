@@ -155,57 +155,34 @@ Atualização:
 
 # Visualização
 
-Durante o treinamento o gráfico é atualizado em tempo real mostrando:
+Aqui está a versão ajustada, mantendo o link para o seu GIF de visualização e aplicando as correções matemáticas com LaTeX:
+# Regressão Polinomial via SGD
+Este projeto implementa o ajuste de uma curva polinomial de terceiro grau utilizando o algoritmo de Gradiente Descendente Estocástico (SGD). O objetivo é aproximar os parâmetros de uma função teórica a partir de dados observados.
+## Configurações Experimentais
+ * **Taxa de Aprendizado (\eta):** 5 \times 10^{-4}
+ * **Épocas:** 20
+ * **Modelo:** \hat{y} = ax^3 + bx^2 + cx + d
+## Formulação Matemática
+O erro instantâneo é definido pela diferença entre o valor real e a predição:
 
-* Pontos dos dados originais
-* Curva prevista pelo modelo
+### Gradientes da Função de Custo
+Os gradientes em relação aos coeficientes (derivados da função de perda quadrática) são:
+ *  *  *  * ### Regra de Atualização
+Os parâmetros \theta = \{a, b, c, d\} são atualizados iterativamente:
 
+## Visualização do Treinamento
+Abaixo, a animação mostra a curva prevista convergindo para os dados originais em tempo real:
 <p align="center">
-  <img src="sgd_training.gif" width="500">
+<img src="sgd_training.gif" width="500">
 </p>
+## Objetivo de Convergência
+O algoritmo busca reduzir o erro para que o modelo aproxime-se da função alvo:
 
----
-
-# Resultado Esperado
-
-Ao longo das épocas, a curva prevista deve convergir para a função original:
-
-genui{"math_block_widget_always_prefetch_v2":{"content":"y = 3x^3 - 2x^2 + x + 3"}}
-
-reduzindo progressivamente o erro entre os dados e a predição.
-
----
-
-# Conceitos Envolvidos
-
-* Regressão polinomial
-* Gradiente descendente estocástico (SGD)
-* Ajuste de curvas
-* Geradores pseudoaleatórios
-* XORSHIRO
-* Visualização dinâmica com Matplotlib
-* Otimização numérica
-
----
-
-# Possíveis Melhorias
-
-* Implementar função de custo MSE
-* Salvar a animação em GIF ou MP4
-* Adicionar minibatch gradient descent
-* Comparar com NumPy Polynomial Fit
-* Implementar Adam Optimizer
-* Adicionar métricas de erro
-* Usar ruído gaussiano realista
-
----
-
-# Autor
-
-Projeto desenvolvido para estudo de:
-
-* Machine Learning
-* Métodos Numéricos
-* Regressão Polinomial
-* Otimização com SGD
-* Visualização computacional em Python
+## Tecnologias e Conceitos
+ * **Otimização:** Gradiente Descendente Estocástico (SGD).
+ * **Numérico:** Ajuste de curvas e geradores pseudoaleatórios (XORSHIRO).
+ * **Visualização:** Matplotlib para renderização dinâmica.
+## Próximos Passos
+ * Implementação de Minibatch Gradient Descent.
+ * Uso de otimizadores avançados (Adam ou Momentum).
+ * Inclusão de métricas como Erro Quadrático Médio (MSE).
